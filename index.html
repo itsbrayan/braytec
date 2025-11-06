@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BRAYTEC — Serviços TI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container container">
+      <div class="logo">BRAYTEC</div>
+
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-label="Abrir menu" onclick="toggleMenu()">
+        
+      </button>
+
+      <nav id="nav-menu"
+     class="nav-menu" role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+
+      <style>
+        /* Clean, mostly-white menu */
+        #navMenu {
+          background: rgba(250, 246, 246, 0.98);
+          color: #222;
+          box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+          border: 1px solid rgba(0,0,0,0.06);
+          border-radius: 8px;
+          padding: 0.25rem 0.6rem;
+          display: inline-block;
+          backdrop-filter: blur(6px);
+        }
+        #navMenu ul{
+          display: flex;
+          gap: 1rem;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          align-items: center;
+        }
+        #navMenu a{
+          color: #222;
+          text-decoration: none;
+          padding: 0.35rem 0.6rem;
+          border-radius: 6px;
+          font-weight: 500;
+          transition: background-color .12s ease, color .12s ease;
+        }
+        #navMenu a:hover,
+        #navMenu a:focus{
+          background: rgba(0,0,0,0.04);
+          outline: none;
+        }
+      </style>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content container">
+        <h1 class="hero-title">BRAYTEC</h1>
+        <p class="hero-subtitle">Atendimento rápido e serviços completos.</p>
+        <a class="btn-primary" href="#services">Nossos Serviços</a>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <h2>Serviços</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="images/ChatGPT Image 2 de nov. de 2025, 23_30_02.png" alt="Windows e Linux" />
+          </div>
+          <h3>Windows ou Linux</h3>
+          <p>Configuração e otimização completa do seu sistema operacional, seja Windows ou Linux. Instalação, personalização e suporte técnico especializado.</p>
+          <ul class="service-features">
+            <li>Instalação e configuração</li>
+            <li>Otimização de desempenho</li>
+            <li>Resolução de problemas</li>
+            <li>Atualizações e segurança</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="images/ChatGPT Image 3.png" alt="Manutenção de Computadores" />
+          </div>
+          <h3>Limpeza e Manutenção</h3>
+          <p>Manutenção preventiva e corretiva do seu computador. Limpeza física e digital para garantir o melhor desempenho do seu equipamento.</p>
+          <ul class="service-features">
+            <li>Limpeza interna e externa</li>
+            <li>Remoção de vírus e malware</li>
+            <li>Otimização de disco</li>
+            <li>Backup de dados</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+                        <img src="images/ChatGPT Image 4.png" alt="Manutenção de Computadores" />
+            <img src="images/dev-web.jpg" alt="Desenvolvimento Web" />
+          </div>
+          <h3>Desenvolvimento Web</h3>
+          <p>Criação de sites profissionais, responsivos e modernos. Do planejamento ao lançamento, desenvolvemos sua presença digital com excelência.</p>
+          <ul class="service-features">
+            <li>Sites institucionais</li>
+            <li>E-commerce</li>
+            <li>Sistemas web personalizados</li>
+            <li>Manutenção e suporte</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="services container">
+      <h2>Contato</h2>
+      <form id="contactForm" class="contact-form" action="#" method="post">
+        <input type="hidden" name="hashid" id="hashid" value="">
+        <label>Nome<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Mensagem<textarea name="message" rows="5" required></textarea></label>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container" style="padding:2rem 0; text-align:center; color:var(--dark-gray);">
+    © Braytec - Todos os direitos reservados
+  </footer>
+
+  <script src="script,.js" defer></script>
+</body>
+</html>
